@@ -1,0 +1,130 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #f0f4f8, #dfe7ec); /* 柔和的浅灰蓝背景 */
+    overflow-x: hidden; /* 防止横向滚动 */
+}
+
+/* 标题部分 */
+.header {
+    background: linear-gradient(135deg, #d4eaf1, #bcdff3); /* 浅蓝到柔和青色 */
+    color: #2c3e50;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.title {
+    font-size: 3rem;
+    margin: 0;
+}
+.subtitle {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin: 10px 0 0;
+    font-style: italic;
+}
+.highlight {
+    color: #6ca0ad; /* 柔和的冷青色 */
+}
+
+/* 主内容部分 */
+.section {
+    padding: 60px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3e4e55; /* 深灰蓝色 */
+}
+.section H2{
+    color:white;
+    text-shadow:2px 2px 2px #43484edf;
+}
+.section p, .section ul {
+    line-height: 3em;
+    font-size: 1rem;
+    color: #5b6f77; /* 柔和的灰蓝色 */
+}
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+.section ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* 关于我部分的背景色 */
+.about {
+    background: linear-gradient(135deg, #ffffff, #accaed); /* 柔和的蓝白渐变 */
+}
+
+/* 技能部分的背景色 */
+.skills {
+    background: linear-gradient(135deg, #ffffff, #8cd2df); /* 浅灰蓝到白的渐变 */
+}
+
+/* 联系方式部分的背景色 */
+.contact {
+    background: linear-gradient(135deg, #ffffff, #cfe5ec); /* 浅青到柔和蓝绿渐变 */
+}
+
+/* 按钮样式 */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #9fc6d1, #6ca0ad); /* 柔和的冷青渐变 */
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(108, 160, 173, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(108, 160, 173, 0.6);
+}
+
+/* 页脚部分 */
+.footer {
+    background: #d5e4ea; /* 柔和的灰蓝色 */
+    color: #6b7e87;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    .section h2 {
+        font-size: 1.8rem;
+    }
+    .section p, .section ul li {
+        font-size: 1rem;
+    }
+}
